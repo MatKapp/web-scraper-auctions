@@ -13,7 +13,7 @@ namespace WebScraper
             CreateContext();
         }
 
-        public async Task<IDocument> LoadDocument(string address)
+        public async Task<IDocument> LoadDocumentAsync(string address)
             => await Context.OpenAsync(address);
 
         private void CreateContext()
